@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel | CareConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body onload="checkAuth(); loadNavbar(); loadAdminStats()">
+    <div id="nav"></div>
+    <div class="container">
+        <header style="text-align: center; margin-bottom: 40px;">
+            <h1 style="font-size: 2.5rem;">Admin Overview</h1>
+            <div id="stats" style="margin-top: 20px;"></div>
+        </header>
+
+        <div class="grid" id="adminGrid">
+            <div class="glass-card" style="text-align: center;">
+                <i class="fas fa-users" style="font-size: 40px; color: #4facfe; margin-bottom: 10px;"></i>
+                <h3>Total Users</h3>
+                <div id="users" style="font-size: 30px; font-weight: bold; color: #4facfe;">0</div>
+            </div>
+            <div class="glass-card" style="text-align: center;">
+                <i class="fas fa-hand-holding-heart" style="font-size: 40px; color: #ff4b2b; margin-bottom: 10px;"></i>
+                <h3>All Requests</h3>
+                <div id="requests" style="font-size: 30px; font-weight: bold; color: #ff4b2b;">0</div>
+            </div>
+            <div class="glass-card" style="text-align: center;">
+                <i class="fas fa-bowl-food" style="font-size: 40px; color: #43e97b; margin-bottom: 10px;"></i>
+                <h3>All Donations</h3>
+                <div id="donations" style="font-size: 30px; font-weight: bold; color: #43e97b;">0</div>
+            </div>
+        </div>
+
+        <div style="margin-top: 40px;">
+            <h2 style="color: #4facfe; margin-bottom: 20px;">Active Items</h2>
+            <div class="grid">
+                <div id="activeRequestsList"></div>
+                <div id="activeDonationsList"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | CareConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+        40% { transform: translateY(-10px); }
+        60% { transform: translateY(-5px); }
+      }
+      @keyframes glow {
+        from { filter: drop-shadow(0 0 5px #4facfe); }
+        to { filter: drop-shadow(0 0 20px #00f2fe); }
+      }
+    </style>
+</head>
+<body style="display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0;">
+
+    <div class="glass-card" style="width: 380px; text-align: center;">
+        <div style="font-size: 50px; color: #4facfe; margin-bottom: 10px; animation: bounce 2s infinite;">
+            <i class="fas fa-bowl-food"></i>
+        </div>
+        <h1 style="font-size: 28px; margin-bottom: 20px; font-weight: 800; background: linear-gradient(135deg, #4facfe, #00f2fe); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: glow 2s ease-in-out infinite alternate;">CareConnect</h1>
+        
+        <h2 style="margin-bottom: 30px; opacity: 0.9;">Welcome Back 👋</h2>
+
+        <div style="font-size: 12px; opacity: 0.6; margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+          <div>For queries: <a href="tel:9492517158" style="color: #4facfe;">9492517158</a></div>
+          <div><a href="mailto:pavankumarpeddireddy629@gmail.com" style="color: #4facfe;">pavankumarpeddireddy629@gmail.com</a></div>
+        </div>
+        
+        <form onsubmit="loginUser(event)">
+            <input id="emailInput" type="email" placeholder="Email Address" required>
+            <input id="passwordInput" type="password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+        </form>
+
+        <div style="margin-top: 25px; font-size: 14px; opacity: 0.8;">
+            <a href="register.html" style="color: #00f2fe; text-decoration: none;">New here? Create account</a>
+            <br><br>
+            <a href="forgot.html" style="color: #aaa; text-decoration: none;">Forgot Password?</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
