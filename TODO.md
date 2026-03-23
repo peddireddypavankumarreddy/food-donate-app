@@ -1,15 +1,11 @@
-# CareConnect Backend Refactor Complete ✅
+# GitHub Push to food-donate-app Repo
 
-## Changes Made:
-1. ✅ Created `backend/controllers/user.js`, `request.js`, `donation.js`
-2. ✅ Created `backend/routes/userRoutes.js`, `requestRoutes.js`, `donationRoutes.js`
-3. ✅ Created `backend/middleware/auth.js`
-4. ✅ Refactored `backend/server.js`: Mounted routers, kept /api/admin
+## Steps:
+- [x] 1. Create .gitignore
+- [x] 2. Update README.md for Food Donate App
+- [x] 3. Checkout main branch
+- [x] 4. Update origin remote to https://github.com/peddireddypavankumarreddy/food-donate-app.git
+- [ ] 5. Commit changes
+- [ ] 6. Push main --force-with-lease
+- [ ] 7. Verify push and clean up branches (optional)
 
-**Endpoints**:
-- Users: POST /api/users/register, POST /api/users/login, GET /api/users/profile
-- Requests: POST/GET/DELETE /api/requests
-- Donations: POST/GET/DELETE /api/requests
-- Dashboard: GET /api/admin (unchanged)
-
-**Next**: Update frontend/script.js for new user endpoints if needed (`npm run dev` to test server).
